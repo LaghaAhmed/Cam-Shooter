@@ -1,0 +1,32 @@
+﻿<Page
+    x:Class="CamShooter2.menu_room"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:CamShooter2"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d"
+    Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
+
+    <Grid >
+        <Grid.Background>
+            <ImageBrush Stretch="Fill" ImageSource="ms-appx:///Assets/backgroundTeam Vertical.jpg"/>
+        </Grid.Background>
+        <StackPanel HorizontalAlignment="Center" VerticalAlignment="Stretch" Margin="0,22,0,0">
+            <Image x:Name="image" Height="85" HorizontalAlignment="Center" VerticalAlignment="Top" Width="390" Source="ms-appx:///Assets/camShooterText.png" Stretch="UniformToFill"/>            
+            <StackPanel VerticalAlignment="Center" HorizontalAlignment="Center" Margin="0,78,0,0">
+                <Button Name="JoinRoom"  Click="JoinRoom_Click"   Foreground="#FFC1A913" BorderBrush="{x:Null}" Width="200" Height="50" FontSize="18" FontFamily="Wasco Sans" FontWeight="Bold">
+                    <Button.Background>
+                        <ImageBrush Stretch="Fill" ImageSource="ms-appx:///Assets/button.png"/>
+                    </Button.Background> Join room
+                </Button>
+                <Button Name="CreateRoom" HorizontalAlignment="Stretch" Click="CreateRoom_Click"  Foreground="#FFC1A913" BorderBrush="{x:Null}" Width="200" Height="50" FontSize="18" FontFamily="Wasco Sans" FontWeight="Bold">
+                    <Button.Background>
+                        <ImageBrush Stretch="Fill" ImageSource="ms-appx:///Assets/button.png"/>
+                    </Button.Background> Create room
+                </Button>
+            </StackPanel>
+        </StackPanel>
+
+    </Grid>
+</Page>

@@ -1,0 +1,36 @@
+﻿<Page
+    x:Class="CamShooter2.vie"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:CamShooter2"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d"
+    Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
+
+    <Grid Style="{StaticResource LayoutGridStyle}">
+        <StackPanel  HorizontalAlignment="Center" VerticalAlignment="Center">
+            <TextBlock></TextBlock>
+            <StackPanel Orientation="Horizontal">
+                <Image Source="ms-appx:///Assets/life.png" Margin="13,0,25,0" Height="70"  />
+                <StackPanel>
+                    <TextBlock FontSize="25" Foreground="#FFC1A913"   FontFamily="Wasco Sans" FontWeight="Bold" >+ 10%</TextBlock>
+                    <Button  >
+                        <Button.Background>
+                            <ImageBrush Stretch="Fill" ImageSource="ms-appx:///Assets/button.png"/>
+                        </Button.Background> Buy 5 coins</Button>
+                </StackPanel>
+            </StackPanel>
+            <StackPanel Orientation="Horizontal">
+                <Image Source="ms-appx:///Assets/life.png" Height="100"  />
+                <StackPanel>
+                    <TextBlock Foreground="#FFC1A913"   FontSize="25" FontFamily="Wasco Sans" FontWeight="Bold"> + 25%</TextBlock>
+                    <Button  >
+                        <Button.Background>
+                            <ImageBrush Stretch="Fill" ImageSource="ms-appx:///Assets/button.png"/>
+                        </Button.Background> Buy 15 coins</Button>
+                </StackPanel>
+            </StackPanel>
+        </StackPanel>
+    </Grid>
+</Page>

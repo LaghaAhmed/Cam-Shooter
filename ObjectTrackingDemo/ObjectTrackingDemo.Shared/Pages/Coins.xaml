@@ -1,0 +1,60 @@
+﻿<Page
+    x:Class="CamShooter2.Coins"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:CamShooter2"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d"
+    Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
+    <Grid Style="{StaticResource LayoutGridStyle}">
+    <StackPanel HorizontalAlignment="Center" VerticalAlignment="Center" Orientation="Horizontal">
+        <TextBlock></TextBlock>
+            <StackPanel Margin="20,20,20,20" >
+                <Image Source="ms-appx:///Assets/coins.png" Height="75"  />
+            <StackPanel >
+                    <TextBlock Foreground="#FFC1A913"   FontSize="24" FontFamily="Wasco Sans" FontWeight="Bold">1000 coins</TextBlock>
+                    <TextBlock FontSize="25"> </TextBlock>
+                    <Button HorizontalAlignment="Center" RenderTransformOrigin="0.872,0.629" >
+                        <Button.Background>
+                            <ImageBrush Stretch="Fill" ImageSource="ms-appx:///Assets/button.png"/>
+                        </Button.Background> Buy 0.99$</Button>
+            </StackPanel>
+        </StackPanel>
+            <StackPanel Margin="20,20,20,20"  >
+                <Image Source="ms-appx:///Assets/coins.png" Height="75"  />
+                <StackPanel>
+                    <TextBlock Foreground="#FFC1A913"   FontSize="24" FontFamily="Wasco Sans" FontWeight="Bold">5000 coins</TextBlock>
+                    <TextBlock FontSize="25"></TextBlock>
+                    <Button HorizontalAlignment="Center" >
+                        <Button.Background>
+                            <ImageBrush Stretch="Fill" ImageSource="ms-appx:///Assets/button.png"/>
+                        </Button.Background> Buy 1.99$</Button>
+                </StackPanel>
+            </StackPanel>
+            <StackPanel Margin="20,20,20,20">
+                <Image Source="ms-appx:///Assets/coins.png" Height="75"  />
+            <StackPanel>
+                    <TextBlock Foreground="#FFC1A913"   FontSize="24" FontFamily="Wasco Sans" FontWeight="Bold">5000 coins</TextBlock>
+                    <TextBlock Foreground="#FFC1A913"   FontSize="24" FontFamily="Wasco Sans" FontWeight="Bold"> + NO ADS</TextBlock>
+                    <Button  HorizontalAlignment="Center" >
+                        <Button.Background>
+                            <ImageBrush Stretch="Fill" ImageSource="ms-appx:///Assets/button.png"/>
+                        </Button.Background> Buy 2.49$</Button>
+            </StackPanel>
+        </StackPanel>
+
+            <StackPanel Margin="20,20,20,20">
+                <Image Source="ms-appx:///Assets/coins.png" Height="75" Width="80"  />
+            <StackPanel>
+                    <TextBlock Foreground="#FFC1A913"   FontSize="24" FontFamily="Wasco Sans" FontWeight="Bold">10000 coins</TextBlock>
+                    <TextBlock Foreground="#FFC1A913"   FontSize="24" FontFamily="Wasco Sans" FontWeight="Bold"> + NO ADS</TextBlock>
+                    <Button HorizontalAlignment="Center" >
+                        <Button.Background>
+                            <ImageBrush Stretch="Fill" ImageSource="ms-appx:///Assets/button.png"/>
+                        </Button.Background> Buy 4.99$</Button>
+            </StackPanel>
+        </StackPanel>
+    </StackPanel>
+    </Grid>
+</Page>

@@ -1,0 +1,28 @@
+﻿<Page
+    x:Class="CamShooter2.ListRoom"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:CamShooter2"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d"
+    Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
+
+    <Grid >
+        <Grid.Background>
+            <ImageBrush Stretch="Fill" ImageSource="ms-appx:///Assets/backgroundTeam Vertical.jpg"/>
+        </Grid.Background>
+        <Image x:Name="image" Height="85" HorizontalAlignment="Center" VerticalAlignment="Top" Width="390" Source="ms-appx:///Assets/camShooterText.png" Margin="0,22,0,0"/>
+        <TextBlock HorizontalAlignment="Center" Text="List of rooms" FontSize="32" Foreground="#FFC1A913" FontWeight="Bold" FontStyle="Italic" Margin="0,123,0,0"/>
+        <ListView x:Name="ListItems" HorizontalAlignment="Center" VerticalAlignment="Top" Width="200px" Margin="0,165,0,0" SelectionChanged="lst_SelectionChanged_1" >
+            <ListView.ItemTemplate>
+                <DataTemplate>
+                    <StackPanel Orientation="Horizontal" Background="#FFD9AE07" Width="200px" Margin="0,0,0,5"   >
+                        <TextBlock Text="{Binding name}" FontSize="32" FontFamily="Segoe UI" Foreground="White" />
+                    </StackPanel>
+
+                </DataTemplate>
+            </ListView.ItemTemplate>
+        </ListView>
+    </Grid>
+</Page>

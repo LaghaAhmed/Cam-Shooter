@@ -1,0 +1,78 @@
+﻿<Page
+    x:Class="CamShooter2.ListPlayer"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:CamShooter2"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d"
+    Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
+
+    <Grid >
+        <Grid.Background>
+            <ImageBrush Stretch="Fill" ImageSource="ms-appx:///Assets/backgroundTeam Vertical.jpg"/>
+        </Grid.Background>
+        <Image x:Name="image" Height="85" HorizontalAlignment="Center" VerticalAlignment="Top" Width="390" Source="ms-appx:///Assets/camShooterText.png" Stretch="UniformToFill" Margin="0,22,0,0"/>
+        <TextBox  TextWrapping="Wrap" Text="{Binding Log, Mode=TwoWay}" TextChanged="textchange" Name="message" HorizontalAlignment="Stretch" Opacity="0"/>
+            
+        <StackPanel Orientation="Vertical" Margin="0,76,0,0" VerticalAlignment="Center" HorizontalAlignment="Center">
+
+            <StackPanel Orientation="Horizontal" HorizontalAlignment="Center" Margin="0,21,0,0">
+                <StackPanel Orientation="Vertical" HorizontalAlignment="Left" VerticalAlignment="Top">
+                    <StackPanel Orientation="Horizontal">
+                        <TextBlock Name="pp1" FontSize="20" Text="Player 1" HorizontalAlignment="Left" Margin="0" Width="70" />
+                        <Rectangle Name="p1co" Fill="{Binding}" Height="30" Stroke="Black" Margin="30,0,0,0" HorizontalAlignment="Center" VerticalAlignment="Center" Width="30"/>
+                    </StackPanel>
+                    <StackPanel Orientation="Horizontal">
+                        <TextBlock Name="p1" FontSize="20" Text="    Amine Yahyaoui" HorizontalAlignment="Left" Margin="0,15,0,0" Width="170"/>
+
+                    </StackPanel>
+                </StackPanel>
+
+                <StackPanel Orientation="Vertical" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="150,0,0,0">
+                    <StackPanel Orientation="Horizontal">
+                        <TextBlock Name="pp2" FontSize="20" Text="Player 2" HorizontalAlignment="Left" Margin="0" Width="70"/>
+                        <Rectangle Name="p2co" Fill="{Binding}" Height="30" Stroke="Black" Margin="30,0,0,0" HorizontalAlignment="Center" VerticalAlignment="Center" Width="30"/>
+                    </StackPanel>
+                    <StackPanel Orientation="Horizontal">
+                        <TextBlock Name="p2" FontSize="20" Text="    Ahmed Lagha" HorizontalAlignment="Left" Margin="0,15,0,0" Width="170"/>
+
+
+                    </StackPanel>
+                </StackPanel>
+            </StackPanel>
+
+            <StackPanel Orientation="Horizontal">
+                <StackPanel Orientation="Vertical" HorizontalAlignment="Left" VerticalAlignment="Top">
+                    <StackPanel Orientation="Horizontal" Margin="0,50,0,0">
+                        <TextBlock Name="pp3" FontSize="20" Text="Player 3" HorizontalAlignment="Left" Margin="0" Width="70" />
+                        <Rectangle Name="p3co" Fill="{Binding}" Height="30" Stroke="Black" Margin="30,0,0,0" HorizontalAlignment="Center" VerticalAlignment="Center" Width="30"/>
+                    </StackPanel>
+
+                    <StackPanel Orientation="Horizontal">
+                        <TextBlock  Name="p3" FontSize="20" Text="    Amine Trabelsi" HorizontalAlignment="Left" Width="170" Margin="0,15,0,0"/>
+
+
+                    </StackPanel>
+                </StackPanel>
+
+                <StackPanel Orientation="Vertical" HorizontalAlignment="Right" VerticalAlignment="Top" Margin="150,0,0,0">
+                    <StackPanel Orientation="Horizontal" Margin="0,50,0,0">
+                        <TextBlock Name="pp4" FontSize="20" Text="Player 4" HorizontalAlignment="Left" Margin="0" Width="70"/>
+                        <Rectangle Name="p4co" Fill="{Binding}" Height="30" Stroke="Black" Margin="30,0,0,0" HorizontalAlignment="Center" VerticalAlignment="Center" Width="30"/>
+                    </StackPanel>
+                    <StackPanel Orientation="Horizontal">
+                        <TextBlock   Name="p4" FontSize="20" Text="    Hedi Friha" HorizontalAlignment="Left" Width="170" Margin="0,15,0,0"/>
+
+                    </StackPanel>
+                </StackPanel>
+            </StackPanel>
+            <Button HorizontalAlignment="Center"  VerticalAlignment="Center"  Margin="0,10,0,0" Click="Button_Click"   Foreground="#FFC1A913" BorderBrush="{x:Null}" Width="200" Height="50" FontSize="18" FontFamily="Wasco Sans" FontWeight="Bold">
+                <Button.Background>
+                    <ImageBrush Stretch="Fill" ImageSource="ms-appx:///Assets/button.png"/>
+                </Button.Background> Tap to Play
+            </Button>
+
+        </StackPanel>
+    </Grid>
+</Page>

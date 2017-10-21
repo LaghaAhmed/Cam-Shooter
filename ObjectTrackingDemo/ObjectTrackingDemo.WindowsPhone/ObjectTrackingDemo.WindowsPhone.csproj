@@ -1,0 +1,225 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="14.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{AE10D24C-A013-455D-8FD9-137B329287DF}</ProjectGuid>
+    <OutputType>AppContainerExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>ObjectTrackingDemo</RootNamespace>
+    <AssemblyName>ObjectTrackingDemo.WindowsPhone</AssemblyName>
+    <DefaultLanguage>en-US</DefaultLanguage>
+    <TargetPlatformVersion>8.1</TargetPlatformVersion>
+    <MinimumVisualStudioVersion>12</MinimumVisualStudioVersion>
+    <FileAlignment>512</FileAlignment>
+    <ProjectTypeGuids>{76F1466A-8B6D-4E39-A767-685A06062A39};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
+    <SynthesizeLinkMetadata>true</SynthesizeLinkMetadata>
+    <NuGetPackageImportStamp>
+    </NuGetPackageImportStamp>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE;NETFX_CORE;WINDOWS_PHONE_APP</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE;NETFX_CORE;WINDOWS_PHONE_APP</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Debug|ARM'">
+    <DebugSymbols>true</DebugSymbols>
+    <OutputPath>bin\ARM\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE;NETFX_CORE;WINDOWS_PHONE_APP</DefineConstants>
+    <NoWarn>;2008</NoWarn>
+    <DebugType>full</DebugType>
+    <PlatformTarget>ARM</PlatformTarget>
+    <UseVSHostingProcess>false</UseVSHostingProcess>
+    <ErrorReport>prompt</ErrorReport>
+    <Prefer32Bit>true</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Release|ARM'">
+    <OutputPath>bin\ARM\Release\</OutputPath>
+    <DefineConstants>TRACE;NETFX_CORE;WINDOWS_PHONE_APP</DefineConstants>
+    <Optimize>true</Optimize>
+    <NoWarn>;2008</NoWarn>
+    <DebugType>pdbonly</DebugType>
+    <PlatformTarget>ARM</PlatformTarget>
+    <UseVSHostingProcess>false</UseVSHostingProcess>
+    <ErrorReport>prompt</ErrorReport>
+    <Prefer32Bit>true</Prefer32Bit>
+  </PropertyGroup>
+  <!--
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Debug|x86'">
+    <DebugSymbols>true</DebugSymbols>
+    <OutputPath>bin\x86\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE;NETFX_CORE;WINDOWS_PHONE_APP</DefineConstants>
+    <NoWarn>;2008</NoWarn>
+    <DebugType>full</DebugType>
+    <PlatformTarget>x86</PlatformTarget>
+    <UseVSHostingProcess>false</UseVSHostingProcess>
+    <ErrorReport>prompt</ErrorReport>
+    <Prefer32Bit>true</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Release|x86'">
+    <OutputPath>bin\x86\Release\</OutputPath>
+    <DefineConstants>TRACE;NETFX_CORE;WINDOWS_PHONE_APP</DefineConstants>
+    <Optimize>true</Optimize>
+    <NoWarn>;2008</NoWarn>
+    <DebugType>pdbonly</DebugType>
+    <PlatformTarget>x86</PlatformTarget>
+    <UseVSHostingProcess>false</UseVSHostingProcess>
+    <ErrorReport>prompt</ErrorReport>
+    <Prefer32Bit>true</Prefer32Bit>
+  </PropertyGroup>
+  -->
+  <ItemGroup>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <AppxManifest Include="Package.appxmanifest">
+      <SubType>Designer</SubType>
+    </AppxManifest>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Assets\1920x1080-black-solid-color-background.jpg" />
+    <Content Include="Assets\backgroundTeam Vertical.jpg" />
+    <Content Include="Assets\backgroundTeam.jpg" />
+    <Content Include="Assets\bg-viseur.png" />
+    <Content Include="Assets\bgScore.png" />
+    <Content Include="Assets\bgScore2.png" />
+    <Content Include="Assets\blue-bar.png" />
+    <Content Include="Assets\blue-bar2.png" />
+    <Content Include="Assets\button.png" />
+    <Content Include="Assets\camShooterText.png" />
+    <Content Include="Assets\cartouch.png" />
+    <Content Include="Assets\coins.png" />
+    <Content Include="Assets\FlashIcon.png" />
+    <Content Include="Assets\HideIcon.png" />
+    <Content Include="Assets\Hitpoints.png" />
+    <Content Include="Assets\HurtImage.png" />
+    <Content Include="Assets\introLegends.mov" />
+    <Content Include="Assets\life.png" />
+    <Content Include="Assets\Logo.scale-240.png" />
+    <Content Include="Assets\logo100.png" />
+    <Content Include="Assets\logo106.png" />
+    <Content Include="Assets\logo140.png" />
+    <Content Include="Assets\logo150.png" />
+    <Content Include="Assets\logo170.png" />
+    <Content Include="Assets\logo24.png" />
+    <Content Include="Assets\logo240.png" />
+    <Content Include="Assets\logo360.png" />
+    <Content Include="Assets\logo44.png" />
+    <Content Include="Assets\logo71.png" />
+    <Content Include="Assets\logoLegends.png" />
+    <Content Include="Assets\pistole.png" />
+    <Content Include="Assets\reload.png" />
+    <Content Include="Assets\SettingsIcon.png" />
+    <Content Include="Assets\Shield.jpg" />
+    <Content Include="Assets\shotgun.mp3" />
+    <Content Include="Assets\SmallLogo.scale-240.png" />
+    <Content Include="Assets\SplashScreen.scale-240.png" />
+    <Content Include="Assets\SplashScreen2.png" />
+    <Content Include="Assets\SplashScreen3.scale-240.png" />
+    <Content Include="Assets\SplashScreen310150.png" />
+    <Content Include="Assets\Square71x71Logo.scale-240.png" />
+    <Content Include="Assets\StoreLogo.scale-240.png" />
+    <Content Include="Assets\target.png" />
+    <Content Include="Assets\tos_keypress1.mp3" />
+    <Content Include="Assets\versionfinal2.jpg" />
+    <Content Include="Assets\viseur1.png" />
+    <Content Include="Assets\viseur2.png" />
+    <Content Include="Assets\viseur3.jpg" />
+    <Content Include="Assets\viseur4.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\..\VideoEffect\VideoEffect.WindowsPhone\VideoEffect.WindowsPhone.vcxproj">
+      <Project>{4349460b-c9db-467f-8be8-8c64243818f6}</Project>
+      <Name>VideoEffect.WindowsPhone</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <Reference Include="Accord">
+      <HintPath>..\..\..\..\Nouveau dossier\object-tracking-demo-master!!! - new test\ObjectTrackingDemo\ObjectTrackingDemo.WindowsPhone\bin\ARM\Debug\Accord.dll</HintPath>
+    </Reference>
+    <Reference Include="Accord.Imaging">
+      <HintPath>..\..\..\..\Nouveau dossier\object-tracking-demo-master!!! - new test\ObjectTrackingDemo\ObjectTrackingDemo.WindowsPhone\bin\ARM\Debug\Accord.Imaging.dll</HintPath>
+    </Reference>
+    <Reference Include="Accord.MachineLearning">
+      <HintPath>..\..\..\..\Nouveau dossier\object-tracking-demo-master!!! - new test\ObjectTrackingDemo\ObjectTrackingDemo.WindowsPhone\bin\ARM\Debug\Accord.MachineLearning.dll</HintPath>
+    </Reference>
+    <Reference Include="Accord.Math">
+      <HintPath>..\..\..\..\Nouveau dossier\object-tracking-demo-master!!! - new test\ObjectTrackingDemo\ObjectTrackingDemo.WindowsPhone\bin\ARM\Debug\Accord.Math.dll</HintPath>
+    </Reference>
+    <Reference Include="Accord.Statistics">
+      <HintPath>..\..\..\..\Nouveau dossier\object-tracking-demo-master!!! - new test\ObjectTrackingDemo\ObjectTrackingDemo.WindowsPhone\bin\ARM\Debug\Accord.Statistics.dll</HintPath>
+    </Reference>
+    <Reference Include="Accord.Vision">
+      <HintPath>..\..\..\..\Nouveau dossier\object-tracking-demo-master!!! - new test\ObjectTrackingDemo\ObjectTrackingDemo.WindowsPhone\bin\ARM\Debug\Accord.Vision.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.WindowsAzure.Mobile">
+      <HintPath>..\..\..\pim!!!!\object-tracking-demo-master!!!\ObjectTrackingDemo\ObjectTrackingDemo.WindowsPhone\bin\ARM\Debug\Microsoft.WindowsAzure.Mobile.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.WindowsAzure.Mobile.Ext">
+      <HintPath>..\..\..\pim!!!!\object-tracking-demo-master!!!\ObjectTrackingDemo\ObjectTrackingDemo.WindowsPhone\bin\ARM\Debug\Microsoft.WindowsAzure.Mobile.Ext.dll</HintPath>
+    </Reference>
+    <Reference Include="Newtonsoft.Json">
+      <HintPath>..\..\..\pim!!!!\object-tracking-demo-master!!!\ObjectTrackingDemo\ObjectTrackingDemo.WindowsPhone\bin\ARM\Debug\Newtonsoft.Json.dll</HintPath>
+    </Reference>
+    <Reference Include="RealtimeFramework.Messaging">
+      <HintPath>..\..\..\pim!!!!\object-tracking-demo-master!!!\ObjectTrackingDemo\ObjectTrackingDemo.WindowsPhone\bin\ARM\Debug\RealtimeFramework.Messaging.dll</HintPath>
+    </Reference>
+    <Reference Include="Shim">
+      <HintPath>..\..\..\..\Nouveau dossier\object-tracking-demo-master!!! - new test\ObjectTrackingDemo\ObjectTrackingDemo.WindowsPhone\bin\ARM\Debug\Shim.dll</HintPath>
+    </Reference>
+    <Reference Include="Shim.Drawing">
+      <HintPath>..\..\..\..\Nouveau dossier\object-tracking-demo-master!!! - new test\ObjectTrackingDemo\ObjectTrackingDemo.WindowsPhone\bin\ARM\Debug\Shim.Drawing.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Net.Http.Extensions">
+      <HintPath>..\..\..\pim!!!!\object-tracking-demo-master!!!\ObjectTrackingDemo\ObjectTrackingDemo.WindowsPhone\bin\ARM\Debug\System.Net.Http.Extensions.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Net.Http.Primitives">
+      <HintPath>..\..\..\pim!!!!\object-tracking-demo-master!!!\ObjectTrackingDemo\ObjectTrackingDemo.WindowsPhone\bin\ARM\Debug\System.Net.Http.Primitives.dll</HintPath>
+    </Reference>
+    <Reference Include="WriteableBitmapEx.WinRT">
+      <HintPath>..\..\..\..\Nouveau dossier\object-tracking-demo-master!!! - new test\ObjectTrackingDemo\ObjectTrackingDemo.WindowsPhone\bin\ARM\Debug\WriteableBitmapEx.WinRT.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="packages.config">
+      <SubType>Designer</SubType>
+    </None>
+  </ItemGroup>
+  <PropertyGroup Condition=" '$(VisualStudioVersion)' == '' or '$(VisualStudioVersion)' &lt; '12.0' ">
+    <VisualStudioVersion>12.0</VisualStudioVersion>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(TargetPlatformIdentifier)' == '' ">
+    <TargetPlatformIdentifier>WindowsPhoneApp</TargetPlatformIdentifier>
+  </PropertyGroup>
+  <Import Project="..\ObjectTrackingDemo.Shared\ObjectTrackingDemo.Shared.projitems" Label="Shared" />
+  <Import Project="$(MSBuildExtensionsPath)\Microsoft\WindowsXaml\v$(VisualStudioVersion)\Microsoft.Windows.UI.Xaml.CSharp.targets" />
+  <Import Project="..\..\packages\Accord.3.0.2\build\Accord.targets" Condition="Exists('..\..\packages\Accord.3.0.2\build\Accord.targets')" />
+  <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">
+    <PropertyGroup>
+      <ErrorText>This project references NuGet package(s) that are missing on this computer. Use NuGet Package Restore to download them.  For more information, see http://go.microsoft.com/fwlink/?LinkID=322105. The missing file is {0}.</ErrorText>
+    </PropertyGroup>
+    <Error Condition="!Exists('..\..\packages\Accord.3.0.2\build\Accord.targets')" Text="$([System.String]::Format('$(ErrorText)', '..\..\packages\Accord.3.0.2\build\Accord.targets'))" />
+  </Target>
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
